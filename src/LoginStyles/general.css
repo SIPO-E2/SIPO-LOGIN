@@ -1,0 +1,13 @@
+/*General Styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0 auto;
+  font-family: Plus Jakarta Sans, sans-serif;
+}

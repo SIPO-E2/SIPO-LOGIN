@@ -1,0 +1,206 @@
+.login-section {
+  display: flex;
+  justify-content: center;
+  margin-top: -250px; /* Ajusta según la altura de tu formulario para que se sobreponga a la imagen de fondo */
+  font-family: Plus Jakarta Sans, sans-serif;
+}
+
+.login-container {
+  background: linear-gradient(
+    to bottom,
+    rgba(32, 52, 67, 1) 30%,
+    rgba(81, 132, 169, 1) 70%
+  );
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Ajusta según el ancho deseado para tu formulario */
+}
+
+.subtitle {
+  text-align: left;
+  color: white;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+h2 {
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.sign-in-button {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s; /* Transición suave al cambiar de color */
+}
+
+button:hover {
+  background-color: gray;
+}
+
+.email-text {
+  color: white;
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+.password-text {
+  color: white;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+/* Remember button */
+
+/* Estilo básico del texto */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px; /* Ancho del interruptor */
+  height: 34px; /* Altura del interruptor */
+  margin-top: 10px; /* Espacio entre el botón y el interruptor */
+}
+
+/* Oculta el input de checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Estilo para crear la apariencia del interruptor (slider) */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; /* Color del interruptor cuando está apagado */
+  transition: 0.4s; /* Transición suave para el deslizador */
+  border-radius: 34px; /* Redondeo del interruptor */
+}
+
+/* Círculo dentro del interruptor */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px; /* Tamaño del círculo interno */
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white; /* Color del círculo interno */
+  transition: 0.4s; /* Transición suave para el movimiento del círculo */
+  border-radius: 50%; /* Redondeo del círculo */
+}
+
+/* Cambia el color del fondo del interruptor cuando está en "on" */
+input:checked + .slider {
+  background: rgb(71, 146, 12); /* Color de fondo de la etiqueta */
+}
+
+/* Desplaza el círculo hacia la derecha para el estado "on" */
+input:checked + .slider:before {
+  transform: translateX(26px); /* Desplazamiento del círculo */
+}
+
+/* Estilo opcional para la etiqueta "Remember" */
+label.switch {
+  font-family: Arial, sans-serif;
+  font-size: 16px; /* Tamaño de fuente de la etiqueta */
+  line-height: 34px; /* Altura de línea para centrar verticalmente el texto */
+  margin-right: 12px; /* Espacio entre la etiqueta y el interruptor */
+  color: #fff; /* Color de texto */
+  background: rgb(71, 146, 12); /* Color de fondo de la etiqueta */
+  padding: 0 10px; /* Espaciado interno de la etiqueta */
+  border-radius: 34px; /* Redondeo de la etiqueta */
+  user-select: none; /* Previene la selección del texto al hacer doble clic */
+}
+
+.remember-text {
+  color: white;
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+/*--------------------- Microsft button ------------------------*/
+.microsoft-login-btn {
+  background-color: white; /* Color de fondo del botón */
+  width: 100%;
+  color: black; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 10px; /* Bordes redondeados */
+  font-size: 18px; /* Tamaño del texto */
+  font-weight: bold; /* Peso de la fuente */
+  cursor: pointer; /* Cursor en forma de mano para indicar que es clickeable */
+  outline: none; /* Quitar el contorno que aparece al hacer foco en el botón */
+  display: flex; /* Usar flexbox para alinear el icono y el texto */
+  align-items: center; /* Centrar elementos verticalmente */
+  justify-content: center; /* Centrar elementos horizontalmente */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil para dar profundidad */
+  text-transform: none; /* Mantener la tipografía como viene */
+  transition: background-color 0.3s; /* Transición suave al cambiar de color */
+}
+
+.microsoft-login-btn:hover {
+  background-color: gray; /* Color de fondo al pasar el ratón por encima */
+}
+
+.microsoft-logo {
+  width: 45px; /* Tamaño del logo de Microsoft */
+  height: 45px; /* Mantener la proporción del logo */
+  margin-left: 4px;
+}
+
+.sign-text {
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  margin-left: -23px; /* Espacio entre el logo y el texto */
+}
+
+.account-sign-text {
+  color: white;
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.signup-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}

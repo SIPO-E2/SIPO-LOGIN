@@ -1,0 +1,32 @@
+.hero-section {
+  height: 450px; /* Ajusta la altura según necesites */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.hero-image-container {
+  position: relative; /* Relativo al contenedor del héroe */
+  width: 100%; /* Usa el 100% del ancho de su contenedor */
+  padding: 40px; /* Añade espacio alrededor de la imagen */
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+.hero-image {
+  width: 330px; /* Nuevo ancho para el logo */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block;
+  margin: 0 auto; /* Esto centra la imagen en el contenedor */
+  position: relative; /* Puedes usar absolute si necesitas posicionarlo respecto a su contenedor */
+  top: 20px; /* Ajusta esto según dónde quieras posicionar el logo verticalmente */
+  left: 1px; /* Ajusta esto según dónde quieras posicionar el logo horizontalmente */
+  z-index: 10; /* Asegúrate de que el logo se muestre por encima de otros elementos */
+  margin-top: -180px;
+}
